@@ -1,0 +1,25 @@
+extends layout 
+
+block content 
+    .flexbox-container-myOrder
+      .flexbox-item-myOrder-body
+        h1 Din beställning
+        ol
+          li Hawaii--120 kr
+          li Itailia--125 kr
+          li Kebab--110 kr
+      .break
+      .flexbox-item-myOrder-button
+        p#demo(style='display: none') Tack för din beställning!
+        button.block(type='button' onclick='toggleText()') Beställ
+      .flexbox-item-myOrder-img
+        img(src='img/cesar2.jpg' alt='' width='500px')
+    script.
+      function toggleText() {
+      var text = document.getElementById("demo");
+      if (text.style.display === "none") {
+      text.style.display = "block";
+      } else {
+      text.style.display = "none";
+      }
+      }

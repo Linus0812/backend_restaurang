@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Cesar Pizzeria
+  body
+// Containern till översta menyn
+html
+  head
+  body
+    .flexbox-container-header
+      // De olika meny alternativ
+      a.flexbox-item-header.flexbox-item-login(href='login')
+        .flexbox-item-header.flexbox-item-login
+          div
+            .login
+              img(src='images/profil.jpg', width='75px', height='75px')
+      a.flexbox-item-header.flexbox-item-index(href='first_Page')
+        .flexbox-item-header.flexbox-item-index
+          img(src='images/cesar.png', width='100%', height='100%')
+      .flexbox-item-header.flexbox-item-menu
+        h1
+          a(href='menu') Menu
+      .flexbox-item-header.flexbox-item-contact
+        h1
+          a(href='contact') Contact
+      a.flexbox-item-header.flexbox-item-myOrder(href='myOrder')
+        .flexbox-item-header.flexbox-item-myOrder
+          div
+            .cart
+              img(src='images/shoppingCart.png', width='75px', height='75px')
+
+
+  block content
+

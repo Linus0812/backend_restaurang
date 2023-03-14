@@ -1,0 +1,12 @@
+extends layout2
+
+block content
+    form(action="/login", method="post")
+        input(type="text", placeholder="Enter Username", name="username", required)
+        input(type="password", placeholder="Enter Password", name="password", required)
+        button(type="submit") Login
+    p= errorMsgn
+
+    h1 No Account?
+
+    a(href="/register") Register!
